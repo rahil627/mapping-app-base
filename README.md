@@ -4,6 +4,10 @@ https://hexdocs.pm/phoenix/up_and_running.html
   - TODO: currently at mix ecto.create
   - throwing errors
 
+sudo systemctl start  postgresql.service
+sudo systemctl enable postgresql.service
+
+
 
 To start your Phoenix server:
 
