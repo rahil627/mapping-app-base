@@ -1,9 +1,13 @@
 defmodule MappingAppBaseWeb.PageController do
   use MappingAppBaseWeb, :controller
 
+  # actions
   def home(conn, _params) do
     # The home page is often custom made,
     # so skip the default app layout.
-    render(conn, :home) # layout: false
+    markers = MappingAppBaseWeb.Marker |> MappingAppBase.Marker.list_markers()
+    render(conn, :home, markers: markers)
+    #render(conn, :home) # layout: false
   end
+
 end

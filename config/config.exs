@@ -18,7 +18,8 @@ config :mapping_app_base, MappingAppBaseWeb.Endpoint,
     layout: false
   ],
   pubsub_server: MappingAppBase.PubSub,
-  live_view: [signing_salt: "PKkSTfdg"]
+  live_view: [signing_salt: "PKkSTfdg"],
+  google_maps_api_key: "<YOUR_API_KEY>" # TODO: setup Google Cloud Console
 
 # Configures the mailer
 #

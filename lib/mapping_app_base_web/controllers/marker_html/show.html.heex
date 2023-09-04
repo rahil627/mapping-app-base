@@ -1,0 +1,16 @@
+<.header>
+  Marker <%= @marker.id %>
+  <:subtitle>This is a marker record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/markers/#{@marker}/edit"}>
+      <.button>Edit marker</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Latitude"><%= @marker.latitude %></:item>
+  <:item title="Longitude"><%= @marker.longitude %></:item>
+</.list>
+
+<.back navigate={~p"/markers"}>Back to markers</.back>

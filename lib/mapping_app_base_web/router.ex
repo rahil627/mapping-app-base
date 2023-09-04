@@ -18,7 +18,10 @@ defmodule MappingAppBaseWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    resources "/markers", MarkerController
   end
+
+  # can create another scope to scope functionality for users logged in
 
   # Other scopes may use custom stacks.
   # scope "/api", MappingAppBaseWeb do

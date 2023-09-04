@@ -1,0 +1,8 @@
+<.header>
+  Edit Marker <%= @marker.id %>
+  <:subtitle>Use this form to manage marker records in your database.</:subtitle>
+</.header>
+
+<.marker_form changeset={@changeset} action={~p"/markers/#{@marker}"} />
+
+<.back navigate={~p"/markers"}>Back to markers</.back>
