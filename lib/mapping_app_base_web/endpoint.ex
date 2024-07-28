@@ -47,5 +47,7 @@ defmodule MappingAppBaseWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
+
+  # enter router last
   plug MappingAppBaseWeb.Router
 end
